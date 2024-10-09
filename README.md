@@ -14,3 +14,5 @@ Septiembre 2024
 |---|-----------|-------|
 |1.|Metodología de Evaluación|Activa|
 |2.|Inicialización del Proyecto de Fundamentos de JS|Activa|
+
+
