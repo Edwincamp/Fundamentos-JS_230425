@@ -16,3 +16,8 @@ Septiembre 2024
 |2.|Inicialización del Proyecto de Fundamentos de JS|Activa|
 
 
+### Autor
+Jesús Domínguez Ramírez
+Unidad 1
+Aplicaciones Web Orientadas a Servicios
+Septiembre 2024
