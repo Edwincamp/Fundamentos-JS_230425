@@ -8,3 +8,9 @@ Edwin Hernandez Campos
 Unidad 1
 Aplicaciones Web Orientadas a Servicios
 Septiembre 2024
+
+## Historial de Prácticas
+|No.|Descripción|Estatus|
+|---|-----------|-------|
+|1.|Metodología de Evaluación|Activa|
+|2.|Inicialización del Proyecto de Fundamentos de JS|Activa|
