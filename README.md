@@ -14,9 +14,9 @@ Septiembre 2024
 |---|-----------|-------|
 |1.|Metodología de Evaluación|1|Finalizada|
 |2.|Inicialización del Proyecto de Fundamentos de JS|5|Finalizada|
-|3.|Declaración de Variables (Undefined/Boolean/Number)|10|Activa|
-|4.|Declaración de Variables (continuación)|Por definir|Activa
-|5.|Introducción a Objetos|Activa
+|3.|Declaración de Variables (Undefined/Boolean/Number)|10|Finalizada|
+|4.|Declaración de Variables (continuación)|Por definir|Activa|
+|5.|Introducción a Objetos|Activa|
 
 
 
