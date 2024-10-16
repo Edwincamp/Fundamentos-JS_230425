@@ -12,12 +12,16 @@ Septiembre 2024
 ## Historial de Prácticas
 |No.|Descripción|Estatus|
 |---|-----------|-------|
-|1.|Metodología de Evaluación|Activa|
-|2.|Inicialización del Proyecto de Fundamentos de JS|Activa|
+|1.|Metodología de Evaluación|1|Finalizada|
+|2.|Inicialización del Proyecto de Fundamentos de JS|5|Finalizada|
+|3.|Declaración de Variables (Undefined/Boolean/Number)|10|Finalizada|
+|4.|Declaración de Variables (continuación)|Por definir|Activa|
+|5.|Introducción a Objetos|Activa|
+
 
 
 ### Autor
-Jesús Domínguez Ramírez
+Edwin Hernandez Campos
 Unidad 1
 Aplicaciones Web Orientadas a Servicios
 Septiembre 2024
