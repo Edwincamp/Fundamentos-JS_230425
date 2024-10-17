@@ -3,19 +3,23 @@
 const bg = "linear-gradient(11deg, rgba(199,0,36,1) 0%, rgba(255,129,121,1) 33%, rgba(255,191,26,1) 86%)";
 const style_console = `background: ${bg}; color: white; border-radius: 6px; padding: 4px; font-size: 1.0rem; font-weight: bold`
 console.warn("Practica 06: Arreglos en Java Script")
+    
 //Para declarar un arreglo (array) de datos en JavaScript basta con comenzar con agregar [], y dentro de los datos que contendra el arreglo 
 const mesesAnio=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 console.log("%c1.- Declaración de un arreglo (Array)", style_console);
 console.log(mesesAnio);
 console.table(mesesAnio);
+
 //Aceder a los valores de un arreglo de datos para acceder el valor solo bast
 console.log("%c2.- Leer o recuperar los datos de un arreglo", style_console);
 console.log(`El primer mes del año es: ${mesesAnio[0]} `)
 console.log(`El ultimo mes del año es: ${mesesAnio[mesesAnio,length-1]}`)
+
 //No se pueden acceder a elementos con posiciones negativas o posiciones superiores al tamaño denido.
 console.log(`El mes del año en la posición -1 es: ${mesesAnio[-1]}`)
 console.log(`El mes del año en la posición es: ${mesesAnio[12]}`)
 console.log(`¿Qué tipo de dato es un arreglo? ${typeof(mesesAnio)}`)
+
 //Al ser JavaScript un lenguaje debilmente tipado podremos crear arreglos mixtos de tipos de Datos
 console.log("Declarar un arreglo mixto")
 const saludar= function(nombre){return `Hola, ${nombre}!`}
@@ -39,8 +43,10 @@ console.log(`El dato en la posición[11]= ${arregloMixto[11]} y es del tipo: ${(
 console.log(`El dato en la posición[12]= ${arregloMixto[12]} y es del tipo: ${(typeof(arregloMixto[12]))}`)
 console.log("%c3.- Arreglos Multidimensionales (Matrices)", style_console);
 console.log("Declarando una matriz regular")
+
 //Una matriz es uuna estructura de datos multidimensional (tabla) de n columnas o m filas
 let matriz=[[1,2,3,4], ['a','b','c','d']]
+
 //Este es una matriz regular de 4x4
 console.log(matriz)
 console.table(matriz)
@@ -48,15 +54,18 @@ console.log("Declaramos una matriz irregular")
 const matrizIrregular=[["Juan", "Pedro", "Maria", "Inés"], [true, false, null], [9.2]]
 console.log(matrizIrregular)
 console.table(matrizIrregular)
+
 //Accediendo a los valores de una matriz
 console.log("Leyendo las Propiedades de una Matriz Regular")
 console.log(`Elementos en la posición [0][0]: ${matriz[0][0]}`)
 console.log(`Elementos en la posición [1][2]: ${matriz[1][2]}`)
+
 //Accediendo a los valores de la matriz irregular
 console.log("Leyendo las Propiedades de una Matriz Irregular")
 console.log(`Elementos en la posición [0][0]: ${matrizIrregular[0][0]}`)
 console.log(`Elementos en la posición [1][2] (¿Es Maria mayor?): ${matrizIrregular[1][2]}`)
 console.log(`Elementos en la posición [2][0] (Promedio de Juan): ${matrizIrregular[2][0]}`)
+
 //Funciones y métodos de Arreglos
 //los metodos de ubn objeto siempre son invocados usando un . y su termino se delimitan los parametros entre(), en caso de que no lleve(), no es un metodo, sino una propiedad.
 //
@@ -69,6 +78,7 @@ console.log(`matriz es un arreglo de tamaño: ${matriz.length}`)
 console.log("mmm, eso me da el tamaño de numero de las filas de la matriz, pero cómo saber el número de columna?")
 console.log(`matriz regular tiene un numero de ${matriz[0].length}`)
 console.log(`Y para la matrizIrregular?`)
+
 //Para saber la dimensión de una matriz irregular podemos hacer el uso del ciclo
 let numeroFilas=matrizIrregular.length
 for(let i = 0; i < numeroFilas; i++)
@@ -114,9 +124,11 @@ console.log("%c9.- Modificar un arreglo en un arreglo nuevo con posiciones defin
 console.log("El arreglo original tiene los elementos: ")
 console.table(estudiantes)
 console.log("Dividir el arreglo en uno nuevo eliminando ciertos elementos en base a su posición ")
+
 //Cuando la función splice recibe un solo parámetro eliminará los elementos de esa posición en adelante
 estudiantes.splice(2);
 console.table(estudiantes)
+
 //Cuando la función splice recibe dos parámetros, se eliminan todos los elementos que no estes en ese rango
 estudiantes.push("Carlos Daniel")
 estudiantes.push("Al Farias")
@@ -129,11 +141,13 @@ console.log("Ahora ya tenemos los elementos suficientes para aplicar el metodo s
 estudiantes.splice(3,5)
 console.log("Resultando en: ")
 console.table(estudiantes)
+
 //splice sirve tambien para insertar elementos en posiciones especificos, ahora necesitamos insertar a : "Alondra Torres" entre "Francisco Garcia" y "Teresa Vargas"
 console.log("Ahora vamos a insertar a \"Alondra Torres\" en los elementos dela posición 0 y 1")
 estudiantes.splice(1,0, "Alondra Torres")
 console.log("Resultando en:")
 console.table(estudiantes)
+
 //También splice sirve para reemplazar elementos por otros, en este caso remplazaremos a "Francisco Garcia" por "Ricardo Luna"
 console.log("Ahora vamos a remplazar a \"Francisco Garcia\" en los elementos de la posición por \"Ricardo Luna\"")
 estudiantes.splice(0,1, "Ricardo Luna")
@@ -141,16 +155,19 @@ console.log("Resultando en:")
 console.table(estudiantes)
 console.log("%c10.- Metodos para la manipulación de Arreglos INMUTABLES", style_console);
 let signosZodiacales= ["Aries", "Tauro", "Geminis", "Cáncer", "Leo", "Virgo", "Libra", "Escorpio", "Sagitario", "Capricornio", "Acuario", "Piscis"]
+
 //Desestructuración de Arreglos
 let [signo1,,signo3,,,,signo7,,,,] = signosZodiacales
 console.log(`EL PRIMER SIGNO ZODIACAL ES: ${signo1}`)
 console.log(`EL TERCER SIGNO ZODIACAL ES: ${signo3}`)
 console.log(`EL SEPTIMO SIGNO ZODIACAL ES: ${signo7}`)
+
 //console.log(`EL CUARTO SIGNO ZODIACAL ES: ${signo4}`)
 //congelamos el arreglo volviendolo INMUTABLE
 Object.freeze(signosZodiacales);
 console.log("%c11.- Filtrado de Elemento dentro de un arreglo utilizando el método FILTER", style_console);
 console.table(estudiantes);
+
 //antes de filtrqar datos llenemos el arreglo con 10 elementos
 estudiantes.push("Francisco Garcia");
 estudiantes.push("Jesus Arriaga")
@@ -160,14 +177,17 @@ estudiantes.push("Brian Marquez")
 estudiantes.push("Dulce Balderas")
 console.table(estudiantes)
 Object.freeze(estudiantes)
+
 //Filter es un método que recorre los elementos de un arreglo haciendo alguna tarea en específico, lo que tenemos que considerar es que este nuevo arreglo resultante es un objeto nuevo que pueda ser mutable.
 console.log("Filtrando los primeros 5 elementos")
 let nuevoEstudiantes = estudiantes.filter((estudiante, index) => index<5);
 console.table(nuevoEstudiantes);
 console.table(filtraPrimeros5(estudiantes));
+
 //filtrar a los estudiantes que su nombre tenga más de 15 carácteres
 let nuevoEstudiantesNombre = estudiantes.filter((estudiante) => estudiante.length>15);
 console.table(nuevoEstudiantesNombre);
+
 //Intentamos modificar el arreglo inmutable
 /*estudiantes.pop()
 console.table(estudiantes)*/
