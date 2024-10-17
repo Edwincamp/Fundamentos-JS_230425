@@ -18,7 +18,7 @@ Septiembre 2024
 |4.|Declaración de Variables (continuación)|5|✅Finalizada|
 |5.|Introducción a Objetos|19|✅Finalizada|
 |6.|Ejercicio 04: Repaso de Arreglos|18|✅Finalizada|
-|7.|Ejercicio 05: |--|Activo|
+|7.|Ejercicio 05: |16|✅Finalizada|
 
 
 ### Autor
